@@ -1,0 +1,21 @@
+body{
+    background-color:"#3333ff";
+}
+
+p{
+    font-family:"Arial";
+    font-size:30 em;
+    color:#ffccff;
+}
+
+section{
+    background-color:#000099;
+    width: 2em;
+}
+
+img{
+    height: 20%;
+    width: 30%;
+    border: 1px #3399ff;
+    border-radius: <length-percentage>{1,4}/ <length-percentage>{1,4}>
+}
