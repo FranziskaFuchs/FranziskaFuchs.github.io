@@ -3,19 +3,22 @@ body{
 }
 
 p{
-    font-family:"Arial";
-    font-size:1,5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2,5em;
     color:#ffccff;
+    background-color:#ff66ff;
+    fill-rule:evenodd
 }
 
 section{
     background-color:#000099;
-    width: 2em;
+    width: 100%;
 }
 
 img{
     height: 20%;
     width: 30%;
-    border: 1px #3399ff;
-    border-radius: <length-percentage>{1,4}/ <length-percentage>{1,4}>
+    border: 5px;
+    background-color:#3399ff;
+    border-radius: 10px;
 }
