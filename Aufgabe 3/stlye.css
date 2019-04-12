@@ -12,7 +12,7 @@ p{
 
 section{
     background-color:#000099;
-    width: 4em;
+    width: 100%;
 }
 
 img{
@@ -20,5 +20,5 @@ img{
     width: 30%;
     border: 5px;
     background-color:#3399ff;
-    
+    border-radius: 10px;
 }
