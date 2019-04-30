@@ -41,12 +41,13 @@ aside{
     float: left;
     clear: both;
     margin-top: 30px;
+    width:15%;
     
 }
 aside:hover
 {
     background-color: brown;
-    width: 60%;
+    width: 20%;
 }
 
 footer {
