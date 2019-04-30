@@ -19,7 +19,7 @@ p{
     font-size: 2,5em;
     color:#c298c2;
     background-color:#8a288a;
-    fill-rule:evenodd
+    fill-rule:evenodd;
 }
 
 section{
@@ -33,6 +33,13 @@ img{
     border: 5px;
     background-color:#031e3a;
     border-radius: 50px;
+
+}
+a:hover
+{ 
+    background-color: aqua;
+    float: left;
+    clear: both;
 }
 footer {
     width:100%;
