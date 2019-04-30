@@ -1,7 +1,9 @@
 header {
     width:100%
 }
-
+nav {
+    font-family: vivaldi
+}
 
 body{
     background-color:#9900cc;
