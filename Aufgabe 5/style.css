@@ -5,6 +5,10 @@ nav {
     font-family: vivaldi
 }
 
+main {
+    width: 60%
+}
+
 body{
     background-color:#9900cc;
 }
