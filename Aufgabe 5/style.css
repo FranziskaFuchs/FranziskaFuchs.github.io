@@ -45,6 +45,7 @@ section{
 
 }
 section-article:nth-of-type(5)
+
 h2{
     font-size: 3em;
     color:black;
@@ -88,7 +89,4 @@ footer {
     width:100%;
     clear: both;
     margin-top: 80%;
-}
-pb{
-
 }
