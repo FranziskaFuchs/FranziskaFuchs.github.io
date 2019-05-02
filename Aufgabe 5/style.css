@@ -30,7 +30,7 @@ p{
 
 section{
     background-color:#660033;
-    width: 32%;
+    width: 25%;
     height: 30em;
     overflow:auto;
         overflow-x:auto;
@@ -39,7 +39,9 @@ section{
     color:rgb(235, 69, 111);
     padding-bottom: 2%;
 
+
 }
+section-article:nth-of-type(5)
 h2{
     font-size: 3em;
     color:black;
@@ -57,7 +59,7 @@ article{
 
 }
 img{
-    height: 400px;
+    height: px;
     max-width: 100%;
     border: 5px;
     background-color:#031e3a;
