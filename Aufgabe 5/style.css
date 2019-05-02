@@ -72,7 +72,7 @@ img{
 }
 aside{ 
     width: 15%;
-    background-color: aqua;
+    background-color: rgb(6, 61, 61);
     float: left;
     clear: both;
     margin-top: 30px;
