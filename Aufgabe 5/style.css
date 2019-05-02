@@ -3,6 +3,12 @@ header {
 }
 nav {
     font-family: vivaldi;
+    float: left;
+    margin-top: -2%;
+}
+h1{
+    margin-left: 42%;
+    font-size: 6em;
 }
 
 main {
@@ -24,9 +30,32 @@ p{
 
 section{
     background-color:#660033;
-    width: 100%;
-}
+    width: 32%;
+    height: 30em;
+    overflow:auto;
+        overflow-x:auto;
+        overflow-y: auto;
+    float: left;
+    color:rgb(235, 69, 111);
+    padding-bottom: 2%;
 
+}
+h2{
+    font-size: 3em;
+    color:black;
+}
+article{
+    background-color:rgb(238, 56, 238);
+    width: 90%;
+    padding:1%;
+        padding-top: 1%;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-bottom: 1%;
+    margin-right: 4%;
+    margin-left: 4%;
+
+}
 img{
     height: 400px;
     max-width: 100%;
