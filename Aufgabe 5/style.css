@@ -4,7 +4,7 @@ header {
 nav {
     font-family: vivaldi;
     float: left;
-    margin-top: -2%;
+    
 }
 h1{
     margin-left: 42%;
@@ -81,4 +81,9 @@ aside:hover
 
 footer {
     width:100%;
+    clear: both;
+    margin-top: 80%;
+}
+pb{
+
 }
