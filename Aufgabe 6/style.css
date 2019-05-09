@@ -6,6 +6,19 @@ nav {
     float: left;
     
 }
+ 
+@keyframes open 
+{ from {
+    left: -100vw;
+
+}
+to {
+    left:0;
+}
+}
+ #burgerbutton {
+     display:none;
+ }
 h1{
     margin-left: 42%;
     font-size: 6em;
