@@ -8,6 +8,7 @@ nav {
     margin-top:-10%;
     overflow:hidden;
     transition: linear 0.2s;
+    height:2.8em;
 }
 
 nav:hover{
@@ -28,11 +29,11 @@ div{
     font-size: 5em;
     line-height: 0.5;
     display:block;
-    letter-spacing:-0.33em;
+    letter-spacing:-.03333em;
     width:10px;
     transition: transform 0.8s;
 }
-#burger: hover{
+#burger:hover{
     transform: rotate(180deg);
 }
 
@@ -43,8 +44,8 @@ div{
     font-size: 1.1;
     display: block;
     line-height: 1.1;
-    letter-spacing:-0.33em;
-    padding: 25em 0 0 10px;
+    letter-spacing:-.03333em;
+    padding: .25em 0 0 10px;
     border-left: 10px solid #f0ffff;
 
 
@@ -55,7 +56,7 @@ h1{
 }
 
 main {
-    margin-left: 20%;
+    margin-top: 1em;
     width: 60%;
     clear:both;
 }
@@ -75,19 +76,14 @@ p{
 
 section{
     background-color:#660033;
-    width: 23%;
+    width: 100%;
     height: 30em;
     overflow:auto;
         overflow-x:auto;
         overflow-y: auto;
-    float: left;
     color:rgb(235, 69, 111);
     padding-bottom: 2%;
     margin-bottom: 10px;
-    margin-left: 2px;
-    margin-right: 2px;
-
-
 }
 section-article:nth-of-type(5)
 
@@ -99,13 +95,8 @@ article{
     background-color:rgb(238, 56, 238);
     width: 90%;
     padding:1%;
-        padding-top: 1%;
-        padding-left: 1%;
-        padding-right: 1%;
-        padding-bottom: 1%;
     margin-right: 4%;
     margin-left: 4%;
-
 }
 article:nth-of-type(odd){
     color:rgb(161, 213, 236)
@@ -125,13 +116,10 @@ img{
 
 }
 aside{ 
-    width: 15%;
+    width: 98%;
+    padding: 1%;
     background-color: rgb(6, 61, 61);
-    float: left;
-    clear: both;
-    margin-top: 30px;
-    width:15%;
-    
+    margin-top: 7em;   
 }
 aside:hover
 {
@@ -147,7 +135,6 @@ a{
 footer {
     width:100%;
     clear: both;
-    margin-top: 80%;
     background-color: rgb(153, 16, 233);
     padding-bottom: 2%;
 }
