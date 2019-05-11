@@ -1,10 +1,54 @@
 header {
     width:100%;
+    
 }
 nav {
     font-family: vivaldi;
     float: left;
-    
+    margin-top:-2%;
+    overflow:hidden;
+    transition: linear 0.2s;
+}
+
+nav:hover{
+    height:12em;
+}
+nav li:hover{
+    border-color: rgb(173, 83, 214)
+}
+
+div{
+    width: 25px;
+    height:5px;
+    background-color: grey;
+    margin-bottom: 5px;
+}
+
+#burger {
+    font-size: 3em;
+    line-height: 1.1;
+    display:block;
+    letter-spacing:-0.33em;
+    width:25px;
+    transition: transform 0.8s;
+}
+#burger: hover{
+    transform: rotate(180deg);
+}
+
+.mi{
+    background-color: rgb(240, 14, 101);
+    margin-bottom:0.2em;
+    width: 6em;
+    font-size: 1.1;
+    display: block;
+    line-height: 1.1;
+    letter-spacing:-0.33em;
+    padding: 25em 0 0 10px;
+    border-left: 10px solid #f0ffff;
+
+
+}
 h1{
     margin-left: 42%;
     font-size: 6em;
@@ -13,37 +57,14 @@ h1{
 main {
     margin-left: 20%;
     width: 60%;
+    clear:both;
 }
 
 body{
     background-color:#84dfcb;
-    margin: 0;
-    padding: 0;
     color:rgb(196, 196, 109);
     font-family: "Avenir Next", "Avenir", sans-serif;
 }
- 
-a{
-    text-decoration: :none;
-    color: #232323; 
-    transition: color 0.3s ease;
-}
-
-a: hover{
-    color:tomato;
-}
-
-#menuToggle
-{
-    display:block;
-    position: relative;
-    top: 50px;
-    left:50px;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select:none;
-}
-
 p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2,5em;
@@ -86,6 +107,15 @@ article{
     margin-left: 4%;
 
 }
+article:nth-of-type(odd){
+    color:rgb(161, 213, 236)
+}
+header h1{
+    padding-left: 1em;
+    margin-left:33%;
+    font-size: 6em;
+}
+
 img{
     height: 200px;
     width: 100%;
@@ -108,10 +138,62 @@ aside:hover
     background-color: brown;
     width: 20%;
 }
+a{
+    font-family: arial;
+    color:rgb(229, 174, 236);
+    font-size:1.5em;
+}
 
 footer {
     width:100%;
     clear: both;
     margin-top: 80%;
     background-color: rgb(153, 16, 233);
+    padding-bottom: 2%;
+}
+@media screen and (min-width: 63em){
+    main{
+        width:80%;
+        margin-left: 20%;
+        margin-top: 7em;
+    }
+    section{
+        width: 49%;
+        float: left;
+        margin-left: 2%;
+
+    }
+    aside{
+        background-color: antiquewhite;
+        width: 15%;
+        position: fixed;
+        padding: 1%;
+        margin-top: 3em;
+    }
+    aside:hover{
+        width: 17.5%;
+    }
+    section:first-of-type, section:nth-of-type(2n+1){
+        margin-left: 0%;
+    }
+}
+@media screen and (min-width: 90em){
+    main{
+        width: 60%;
+        margin-left: 20%;
+    }
+    section{
+        width: 23.5%;
+        float:left;
+        margin-left: 2%;
+    }
+
+    section:nth-of-type(2n+1){
+        margin-left: 2%;
+    }
+
+    section:first-of-type,section:nth-of-type(4n+1){
+        margin-left: 0%;
+        clear:both;
+    }
 }
