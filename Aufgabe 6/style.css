@@ -37,7 +37,13 @@ div{
     transform: rotate(180deg);
 }
 
-.mi{
+a{
+    font-family: arial;
+    color:rgb(229, 174, 236);
+    font-size:1.5em;
+}
+
+.mi a{
     background-color: rgb(240, 14, 101);
     margin-bottom:0.2em;
     width: 6em;
@@ -125,11 +131,6 @@ aside:hover
 {
     background-color: brown;
     width: 20%;
-}
-a{
-    font-family: arial;
-    color:rgb(229, 174, 236);
-    font-size:1.5em;
 }
 
 footer {
