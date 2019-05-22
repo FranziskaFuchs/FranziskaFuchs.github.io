@@ -26,6 +26,13 @@ function changeName()
     let love: number=number1 + number2;
     let Heart: heart=true;
 
+    console.log(number1 + number2);
+    console.log(number1 + id);
+
+    document.getElementById(id).innerHTML += " things";
+    document.getElementById(id).className = "tight";
+
+
 
 
 
