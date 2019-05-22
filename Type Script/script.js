@@ -4,21 +4,15 @@ window.onload = function () {
     document.getElementById("Ramona").addEventListener("click", changeName);
 };
 function changeName() {
-    let id = "time";
-    let stringRamona = "";
-    let time = "eleven";
+    let str1 = "time";
+    let str2 = "eleven";
     let number1 = 1;
     let number2 = 2;
-    number1 = 3;
-    number1 = number1 + 2;
-    number1 += 2;
-    name += name;
-    console.log(name);
-    console.log("Dies Variable ist leer: " + stringRamona);
-    let love = number1 + number2;
-    let Heart = true;
-    console.log(number1 + number2);
-    console.log(number1 + id);
+    number1 = number1 + number2;
+    console.log(number1);
+    str1 = str1 + str2;
+    console.log(str1);
+    console.log(number1 + str1);
     document.getElementById(id).innerHTML += " things";
     document.getElementById(id).className = "tight";
 }

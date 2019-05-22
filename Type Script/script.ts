@@ -7,27 +7,19 @@ document.getElementById("Ramona").addEventListener("click", changeName);
 
 function changeName()
 {
-    let id: string="time";
-
-    let stringRamona: string="";
-    let time: string= "eleven"
+    let str1: string="time";
+    let str2: string= "eleven";
     let number1: number=1;
     let number2: number=2;
 
-    number1=3;
-    number1 = number1 + 2;
-    number1 += 2;
+    number1= number1+number2;
+    console.log(number1);
 
-    name += name;
-    console.log(name);
+    str1=str1+str2;
+    console.log(str1);
 
-    console.log("Dies Variable ist leer: " + stringRamona);
+    console.log(number1+str1);
 
-    let love: number=number1 + number2;
-    let Heart: heart=true;
-
-    console.log(number1 + number2);
-    console.log(number1 + id);
 
     document.getElementById(id).innerHTML += " things";
     document.getElementById(id).className = "tight";
