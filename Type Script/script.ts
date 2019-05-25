@@ -11,6 +11,7 @@ function changeName()
     let str2: string= "eleven";
     let number1: number=1;
     let number2: number=2;
+   
 
     number1= 2;
     number1= number1+number2; 
@@ -26,15 +27,23 @@ function changeName()
     document.getElementById("time").className = "tight";
 
     function init() {
-        document.getElementById('button').addEventListener('click', hinzufuegen);
+        document.getElementById('button').addEventListener('click',hinzufügen);
       }
       document.getElementById("time").innerHTML += " Stuff"; 
       document.getElementById("time").className = "centered";
   }
+  public class Wetter {
+	private boolean.sonneScheint: any;
 
-
-
-
-
+    public boolean.blickInDenHimmel()
+    {
+		boolean.keineWolken=true;
+		if(keineWolken){
+			return sonneScheint=true;
+		}else{
+			return sonneScheint=false;
+		}
+	}
+}
 }
 
