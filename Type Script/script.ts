@@ -23,21 +23,14 @@ function changeName()
 
 
     document.getElementById("time").innerHTML += " things";
-    document.getElementById("time")className = "tight";
+    document.getElementById("time").className = "tight";
 
     function init() {
         document.getElementById('button').addEventListener('click', hinzufuegen);
       }
-     
-      function hinzufuegen () {
-        var typ = document.Formular.Elementtyp.options[document.Formular.Elementtyp.selectedIndex].value,
-            elementknoten = document.createElement(typ);
-        if (typ != 'hr') {
-           var textknoten = document.createTextNode(document.Formular.Elementinhalt.value);
-           elementknoten.appendChild(textknoten);
-        }
-          document.getElementById('User').appendChild(elementknoten);
-        }
+      document.getElementById("time").innerHTML += " Stuff"; 
+      document.getElementById("time").className = "centered";
+  }
 
 
 
