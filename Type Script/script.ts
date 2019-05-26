@@ -1,12 +1,13 @@
 console.log("Dokument wird geladen"); /*Konsolenausgabe nach Start */
 
-window.onload=function() {
+window.onload = function() {
 console.log("Dokument ist geladen");
 document.getElementById("Ramona").addEventListener("click", changeName);
 document.getElementById("Jennis").addEventListener("click",addElement);
+document.getElementById("button").addEventListener("click",init);
  }
 function init() {
-    document.getElementById('button').addEventListener('click',init);
+    document.getElementById("button").addEventListener("click",init);
   }
 
 function changethings(){ 
