@@ -5,6 +5,7 @@ console.log("Dokument ist geladen");
 document.getElementById("Ramona").addEventListener("click", changeName);
 document.getElementById("Jennis").addEventListener("click",addElement);
 document.getElementById("button").addEventListener("click",init);
+document.getElementById("time").addEventListener("click",changethings);
  }
 function init() {
     document.getElementById("button").addEventListener("click",init);
