@@ -2,6 +2,7 @@ console.log("Dokument wird geladen"); /*Konsolenausgabe nach Start */
 window.onload = function () {
     console.log("Dokument ist geladen");
     document.getElementById("Ramona").addEventListener("click", changeName);
+    document.getElementById("Jennis").addEventListener("click", addElement);
 };
 function init() {
     document.getElementById('button').addEventListener('click', init);
@@ -21,5 +22,12 @@ function () {
     document.getElementById("time").className = "tight";
     document.getElementById("time").innerHTML += " Stuff";
     document.getElementById("time").className = "centered";
+}
+function addElement() {
+    let element = document.getElementById("Jennis");
+    let paragraph = document.createElement("p");
+    let text = document.createTextNode("neues HTML Element per Typescript");
+    paragraph.appendChild(text);
+    element.appendChild(paragraph);
 }
 //# sourceMappingURL=script.js.map
