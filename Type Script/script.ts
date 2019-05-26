@@ -33,7 +33,7 @@ function
       document.getElementById("time").innerHTML += " Stuff"; 
       document.getElementById("time").className = "centered";
   }
-  function addElement(){
+  /*function addElement(){
       let element = document.getElementById("Jennis");
       let paragraph = document.createElement("p");
       let text = document.createTextNode("neues HTML Element per Typescript");
@@ -48,7 +48,7 @@ function
       paragraph.appendChild(text);
       element.appendChild(paragraph);
       
-  }
+  }*/
   
 }
 

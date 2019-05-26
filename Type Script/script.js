@@ -22,18 +22,4 @@ function () {
     document.getElementById("time").innerHTML += " Stuff";
     document.getElementById("time").className = "centered";
 }
-function addElement() {
-    let element = document.getElementById("Jennis");
-    let paragraph = document.createElement("p");
-    let text = document.createTextNode("neues HTML Element per Typescript");
-    paragraph.appendChild(text);
-    element.appendChild(paragraph);
-}
-function changeName() {
-    let element = document.getElementById("Jennis");
-    let paragraph = document.createElement("p");
-    let text = document.createTextNode("Verändere den Namen");
-    paragraph.appendChild(text);
-    element.appendChild(paragraph);
-}
 //# sourceMappingURL=script.js.map
