@@ -5,7 +5,7 @@ console.log("Dokument ist geladen");
 document.getElementById("Ramona").addEventListener("click", changeName);
 document.getElementById("Jennis").addEventListener("click",addElement);
 document.getElementById("button").addEventListener("click",init);
-document.getElementById("time").addEventListener("click",changethings);
+
  }
 function init() {
     document.getElementById("button").addEventListener("click",init);
@@ -44,7 +44,7 @@ function changethings(){
   }
 
   function changeName(){
-      let element = document.getElementById("Jennis");
+      let element = document.getElementById("Ramona");
       let paragraph = document.createElement("p");
       let text = document.createTextNode("Verändere den Namen");
       paragraph.appendChild(text);
