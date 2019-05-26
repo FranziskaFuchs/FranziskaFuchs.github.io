@@ -1,12 +1,15 @@
 console.log("Dokument wird geladen"); /*Konsolenausgabe nach Start */
 
-window.onload=function() {
-console.log("Dokument ist geladen");
-document.getElementById("Ramona").addEventListener("click", changeName); 
+window.onload=function() 
+ {console.log("Dokument ist geladen");
+document.getElementById("Ramona").addEventListener("click", changeName);
+ }
+function init() {
+    document.getElementById('button').addEventListener('click',init);
+  }
 
-
-function changeName()
-{
+function 
+    { 
     let str1: string="time";
     let str2: string= "eleven";
     let number1: number=1;
@@ -24,26 +27,28 @@ function changeName()
 
 
     document.getElementById("time").innerHTML += " things";
-    document.getElementById("time").className = "tight";
+    document.getElementById("time").className = "tight"; 
 
-    function init() {
-        document.getElementById('button').addEventListener('click',hinzufügen);
-      }
+    
       document.getElementById("time").innerHTML += " Stuff"; 
       document.getElementById("time").className = "centered";
   }
-  public class Wetter {
-	private boolean.sonneScheint: any;
+  function addElement(){
+      let element = document.getElementById("Jennis");
+      let paragraph = document.createElement("p");
+      let text = document.createTextNode("neues HTML Element per Typescript");
+      paragraph.appendChild(text);
+      element.appendChild(paragraph);
+  }
 
-    public boolean.blickInDenHimmel()
-    {
-		boolean.keineWolken=true;
-		if(keineWolken){
-			return sonneScheint=true;
-		}else{
-			return sonneScheint=false;
-		}
-	}
-}
+  function changeName(){
+      let element = document.getElementById("Jennis");
+      let paragraph = document.createElement("p");
+      let text = document.createTextNode("Verändere den Namen");
+      paragraph.appendChild(text);
+      element.appendChild(paragraph);
+      
+  }
+  
 }
 
