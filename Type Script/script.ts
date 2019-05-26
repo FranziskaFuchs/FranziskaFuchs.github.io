@@ -1,7 +1,7 @@
 console.log("Dokument wird geladen"); /*Konsolenausgabe nach Start */
 
-window.onload=function() 
- {console.log("Dokument ist geladen");
+window.onload=function() {
+console.log("Dokument ist geladen");
 document.getElementById("Ramona").addEventListener("click", changeName);
 document.getElementById("Jennis").addEventListener("click",addElement);
  }
@@ -9,14 +9,13 @@ function init() {
     document.getElementById('button').addEventListener('click',init);
   }
 
-function 
-    { 
+function changethings(){ 
+
     let str1: string="time";
     let str2: string= "eleven";
     let number1: number=1;
     let number2: number=2;
    
-
     number1= 2;
     number1= number1+number2; 
     console.log(number1);
@@ -32,8 +31,8 @@ function
 
     
       document.getElementById("time").innerHTML += " Stuff"; 
-      document.getElementById("time").className = "centered";
-  }
+      document.getElementById("time").className = "centered";}
+
   function addElement(){
       let element = document.getElementById("Jennis");
       let paragraph = document.createElement("p");
@@ -42,14 +41,14 @@ function
       element.appendChild(paragraph);
   }
 
-  /*function changeName(){
+  function changeName(){
       let element = document.getElementById("Jennis");
       let paragraph = document.createElement("p");
       let text = document.createTextNode("Verändere den Namen");
       paragraph.appendChild(text);
       element.appendChild(paragraph);
       
-  }*/
+  }
   
-}
+
 

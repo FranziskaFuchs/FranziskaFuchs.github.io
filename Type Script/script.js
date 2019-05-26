@@ -7,7 +7,7 @@ window.onload = function () {
 function init() {
     document.getElementById('button').addEventListener('click', init);
 }
-function () {
+function changethings() {
     let str1 = "time";
     let str2 = "eleven";
     let number1 = 1;
@@ -27,6 +27,13 @@ function addElement() {
     let element = document.getElementById("Jennis");
     let paragraph = document.createElement("p");
     let text = document.createTextNode("neues HTML Element per Typescript");
+    paragraph.appendChild(text);
+    element.appendChild(paragraph);
+}
+function changeName() {
+    let element = document.getElementById("Jennis");
+    let paragraph = document.createElement("p");
+    let text = document.createTextNode("Verändere den Namen");
     paragraph.appendChild(text);
     element.appendChild(paragraph);
 }
