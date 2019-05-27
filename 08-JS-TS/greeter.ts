@@ -28,7 +28,7 @@ function changeStuff()
 
     name += name;
     console.log(name);
-
+ 
     console.log("Diese Variable ist leer: " + stringVariable);
 
     let _numberTotal : number = number1 + number2;
