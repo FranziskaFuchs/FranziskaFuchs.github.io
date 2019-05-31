@@ -51,16 +51,23 @@ console.log(monsterArray); // Gebe das Monster-Array einmal zu beginn aus. Es so
 // ----------- Funktionen ----------- //
 // INSGESAMT EINGEBAUTE FEHLER bei den Funktionen: IIIII (5 / fünf)
 
-// Generelle onload-funktion um Event-Listener zum Dokument hinzuzufügen
+console.log("Mehr Monster finden!")// Generelle onload-funktion um Event-Listener zum Dokument hinzuzufügen
 window.onload = function () {
     document.getElementById("monsterSpawner").addEventListener("click", generateMonster,false);
 
     updatePlayerLevel(); // Zu Anfang wird durch eine Funktion ein HTML-Element mit Inhalt befüllt.
 }
 
-{
-  console.log(document.getElementById("monsterSpawner").innerHTML);  
+
+
+ // console.log(document.getElementById("monsterSpawner").innerHTML);  
+
+
+
+function generateMonster() {
+    document.getElementById("monsterSpawner").innerHTML += false; 
 }
+
 
 
 
