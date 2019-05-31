@@ -32,7 +32,8 @@ function generateMonster() {
     let newMonsterName = generateMonsterName(); // Eigens-gebaute Funktion, welche einen string zurück gibt.
     let newMonsterHP = generateMonsterHitPoints(); // Eigens-gebaute Funktion, welche eine Zahl zurück gibt.
     let newMonsterXP = generateMonsterXP(); // Eigens-gebaute Funktion, welche eine Zahl zurück gibt.
-    let newMonsterModifier = generateMonsterModifer(); // Eigens-gebaute Funktion, welche ein string-Array zurück gibt.
+    let newMonsterModifier = generateMonsterModifer();
+    let newMonsterMoney = generateMonsterMoney(); // Eigens-gebaute Funktion, welche ein string-Array zurück gibt.
     let newMonster = {
         monsterName: newMonsterName,
         monsterHealthPoints: newMonsterHP,

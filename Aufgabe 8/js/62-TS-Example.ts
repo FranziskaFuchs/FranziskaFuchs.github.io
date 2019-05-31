@@ -22,7 +22,8 @@ interface Monster {
     monsterName : string; // Name des Monsters
     monsterHealthPoints : number; // Lebenspunkte
     monsterExperience : number; // Erfahrungspunkte bei besiegen des Monsters
-    monsterModifier : string []; // Monster-Verstärker. Diese sind in diesem Fall nur Text! (Da hier einfacher Zufall für die Auswahl genutzt wird, kann der gleiche Eintrag auch doppelt vorkommen)
+    monsterModifier : string [];  
+    monsterMoney: string [];    // Monster-Verstärker. Diese sind in diesem Fall nur Text! (Da hier einfacher Zufall für die Auswahl genutzt wird, kann der gleiche Eintrag auch doppelt vorkommen)
 }
 
 
@@ -32,7 +33,7 @@ interface Monster {
 let monsterHolder : string = "monsterHoldingCell";                                  // ID für das Haupt-Element, in welchem die Monster sich befinden werden. Wird vielleicht mehrfach in dem Skript gebraucht, deshalb einmalig definitiert.
 
 let playerName : string = "Spielername";                                            // Ein paar globale Variablen, welche den Spieler darstellen.
-let playerXP : number =0;                                                          // Stellt die gesammelte Erfahrung des Spielers dar.
+let playerXP : number = 0;                                                          // Stellt die gesammelte Erfahrung des Spielers dar.
 let playerXPperLevel : number = 500;                                                // Da es nur einen Spieler gibt, ergibt sich noch nicht viel Sinn darin, für den Spieler ein interface (im Sinne der Programmierung) zu erstellen.
 
 // Mehrere Arrays, welche jeweils Bauteile für Namen oder Eigenschaften der Monster beinhalten.
@@ -44,7 +45,7 @@ let monsterModifers : string[] = ["Ist nervig", "Linkshänder", "Bier-Connoisseu
 
 // -- Initialisierung für viele/variable Anzahl an Monster --
 let monsterArray : Monster[] = []; // Das Haupt-Array wurde erstellt und initialisiert!
-console.log(monsterArray ); // Gebe das Monster-Array einmal zu beginn aus. Es sollte leer sein.
+console.log(monsterArray); // Gebe das Monster-Array einmal zu beginn aus. Es sollte leer sein.
 
 
 // ----------- Funktionen ----------- //
@@ -60,6 +61,7 @@ window.onload = function () {
 console.log(document.getElementById("monsterSpawner").innerHTML);
 
 
+
 // Die Hauptfunktion, um ein Monster zu erstellen. Wird von einem Button ausgerufen.
 // Generiert ein neues Monster. Dieses wird zu dem Monster-Array hinzugefügt.
 // Ruft eine Funktion auf, welche dann das entsprechende HTML erzeugt.
@@ -67,8 +69,9 @@ function generateMonster()
 {
     let newMonsterName : string = generateMonsterName();                // Eigens-gebaute Funktion, welche einen string zurück gibt.
     let newMonsterHP : number = generateMonsterHitPoints();             // Eigens-gebaute Funktion, welche eine Zahl zurück gibt.
-    let newMonsterXP : number = generateMonsterXP();                    // Eigens-gebaute Funktion, welche eine Zahl zurück gibt.
-    let newMonsterModifier : string[] = generateMonsterModifer();       // Eigens-gebaute Funktion, welche ein string-Array zurück gibt.
+    let newMonsterXP : number = generateMonsterXP();                     // Eigens-gebaute Funktion, welche eine Zahl zurück gibt.
+    let newMonsterModifier : string[] = generateMonsterModifer();
+    let newMonsterMoney : string = generateMonsterMoney ();       // Eigens-gebaute Funktion, welche ein string-Array zurück gibt.
 
     let newMonster : Monster = {                                        // Monster wird erstellt.
         monsterName : newMonsterName, 
