@@ -58,8 +58,10 @@ window.onload = function () {
     updatePlayerLevel(); // Zu Anfang wird durch eine Funktion ein HTML-Element mit Inhalt befüllt.
 }
 
+{
+  console.log(document.getElementById("monsterSpawner").innerHTML);  
+}
 
-console.log(document.getElementById("monsterSpawner").innerHTML);
 
 
 
