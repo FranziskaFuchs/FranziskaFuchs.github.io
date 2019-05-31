@@ -23,7 +23,7 @@ interface Monster {
     monsterHealthPoints : number; // Lebenspunkte
     monsterExperience : number; // Erfahrungspunkte bei besiegen des Monsters
     monsterModifier : string [];  
-    monsterMoney: string [];    // Monster-Verstärker. Diese sind in diesem Fall nur Text! (Da hier einfacher Zufall für die Auswahl genutzt wird, kann der gleiche Eintrag auch doppelt vorkommen)
+    monsterMoney: string []    // Monster-Verstärker. Diese sind in diesem Fall nur Text! (Da hier einfacher Zufall für die Auswahl genutzt wird, kann der gleiche Eintrag auch doppelt vorkommen)
 }
 
 
@@ -53,7 +53,7 @@ console.log(monsterArray); // Gebe das Monster-Array einmal zu beginn aus. Es so
 
 // Generelle onload-funktion um Event-Listener zum Dokument hinzuzufügen
 window.onload = function () {
-    document.getElementById("monsterSpawner").addEventListener("click", generateMonster, false);
+    document.getElementById("monsterSpawner").addEventListener("click", generateMonster);
     updatePlayerLevel(); // Zu Anfang wird durch eine Funktion ein HTML-Element mit Inhalt befüllt.
 }
 
