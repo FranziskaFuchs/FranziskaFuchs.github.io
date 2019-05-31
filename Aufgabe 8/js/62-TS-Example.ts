@@ -23,7 +23,7 @@ interface Monster {
     monsterHealthPoints : number; // Lebenspunkte
     monsterExperience : number; // Erfahrungspunkte bei besiegen des Monsters
     monsterModifier : string [];  
-    monsterMoney: string []    // Monster-Verstärker. Diese sind in diesem Fall nur Text! (Da hier einfacher Zufall für die Auswahl genutzt wird, kann der gleiche Eintrag auch doppelt vorkommen)
+      // Monster-Verstärker. Diese sind in diesem Fall nur Text! (Da hier einfacher Zufall für die Auswahl genutzt wird, kann der gleiche Eintrag auch doppelt vorkommen)
 }
 
 
@@ -54,7 +54,7 @@ console.log(monsterArray); // Gebe das Monster-Array einmal zu beginn aus. Es so
 // Generelle onload-funktion um Event-Listener zum Dokument hinzuzufügen
 window.onload = function () {
     document.getElementById("monsterSpawner").addEventListener("click", generateMonster,false);
-let monsterSpawner: boolean;
+
     updatePlayerLevel(); // Zu Anfang wird durch eine Funktion ein HTML-Element mit Inhalt befüllt.
 }
 
@@ -72,14 +72,14 @@ function generateMonster()
     let newMonsterHP : number = generateMonsterHitPoints();             // Eigens-gebaute Funktion, welche eine Zahl zurück gibt.
     let newMonsterXP : number = generateMonsterXP();                     // Eigens-gebaute Funktion, welche eine Zahl zurück gibt.
     let newMonsterModifier : string[] = generateMonsterModifer();
-    let newMonsterMoney : string = generateMonsterMoney ();       // Eigens-gebaute Funktion, welche ein string-Array zurück gibt.
+           // Eigens-gebaute Funktion, welche ein string-Array zurück gibt.
 
     let newMonster : Monster = {                                        // Monster wird erstellt.
         monsterName : newMonsterName, 
         monsterHealthPoints : newMonsterHP,
         monsterExperience : newMonsterXP,
         monsterModifier : newMonsterModifier,
-        monsterMoney : 0,
+       
     };
 
     monsterArray.push(newMonster);                                      // Monster wird erst in diesem Schritt zu dem Array hinzugefügt 
