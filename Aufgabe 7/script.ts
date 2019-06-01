@@ -44,3 +44,5 @@ function addElement(){
     paragraph.appendChild(text);
     element.appendChild(paragraph);
 }
+
+console.log(addElement);
