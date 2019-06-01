@@ -23,7 +23,8 @@ interface Monster {
     monsterHealthPoints : number; // Lebenspunkte
     monsterExperience : number; // Erfahrungspunkte bei besiegen des Monsters
     monsterModifier : string [];
-    monsterSpawner: string;  
+    mosterMoney: number;
+   
       // Monster-Verstärker. Diese sind in diesem Fall nur Text! (Da hier einfacher Zufall für die Auswahl genutzt wird, kann der gleiche Eintrag auch doppelt vorkommen)
 }
 
@@ -35,15 +36,17 @@ let monsterHolder : string = "monsterHoldingCell";                              
 
 let playerName : string = "Spielername";                                            // Ein paar globale Variablen, welche den Spieler darstellen.
 let playerXP : number = 0;                                                          // Stellt die gesammelte Erfahrung des Spielers dar.
-let playerXPperLevel : number = 500;                                                // Da es nur einen Spieler gibt, ergibt sich noch nicht viel Sinn darin, für den Spieler ein interface (im Sinne der Programmierung) zu erstellen.
+let playerXPperLevel : number = 500;
+let monsterMoney : number=0;                                                // Da es nur einen Spieler gibt, ergibt sich noch nicht viel Sinn darin, für den Spieler ein interface (im Sinne der Programmierung) zu erstellen.
 
 // Mehrere Arrays, welche jeweils Bauteile für Namen oder Eigenschaften der Monster beinhalten.
+
 let prefix : string[] = ["Wald-", "Seuchen-", "Uralte(s) ", "Gift-", "Brennende(s) ", "Kniescheibenzertrümmernde(s) "]; // length = 6, da 6 Einträge. Von 0-5.
 let monsterName : string[] = ["Ratte", "Nagetier", "Ungeziefer"]; // length = 3, da 3 Einträge. Von 0-2.
 let suffix : string[] = [" des Verderbens", " aus der Hölle", " der Lethalität", " mit Rheuma", " der Redundanz", " der Zerberstung"]; // length = 6, da hier 6 Einträge sind. Von 0-5.
 
 let monsterModifers : string[] = ["Ist nervig", "Linkshänder", "Bier-Connoisseur", "Verfehlt häufig", "Prokrastiniert", "Müde", "Verwirrt", "Wasserscheu", "Bipolar", "Hat Schnupfen", "Verläuft sich oft"]; // Eine Reihe von zufälligen "Verstärkern" für das Monster.
-
+let MonsterGold: string[]=["Rosegold","Gold","Silber","Bronze"]
 // -- Initialisierung für viele/variable Anzahl an Monster --
 let monsterArray : Monster[] = []; // Das Haupt-Array wurde erstellt und initialisiert!
 console.log(monsterArray); // Gebe das Monster-Array einmal zu beginn aus. Es sollte leer sein.
@@ -73,6 +76,7 @@ function generateMonster()
     let newMonsterHP : number = generateMonsterHitPoints();             // Eigens-gebaute Funktion, welche eine Zahl zurück gibt.
     let newMonsterXP : number = generateMonsterXP();                     // Eigens-gebaute Funktion, welche eine Zahl zurück gibt.
     let newMonsterModifier : string[] = generateMonsterModifer();
+    let monsterMoney: number= generateMonsterGold();
            // Eigens-gebaute Funktion, welche ein string-Array zurück gibt.
 
     let newMonster : Monster = {                                        // Monster wird erstellt.
@@ -80,6 +84,7 @@ function generateMonster()
         monsterHealthPoints : newMonsterHP,
         monsterExperience : newMonsterXP,
         monsterModifier : newMonsterModifier,
+        monsterMoney: newMonsterGold; 
        
     };
 
