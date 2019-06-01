@@ -22,7 +22,8 @@ interface Monster {
     monsterName : string; // Name des Monsters
     monsterHealthPoints : number; // Lebenspunkte
     monsterExperience : number; // Erfahrungspunkte bei besiegen des Monsters
-    monsterModifier : string [];  
+    monsterModifier : string [];
+    monsterSpawner: string;  
       // Monster-Verstärker. Diese sind in diesem Fall nur Text! (Da hier einfacher Zufall für die Auswahl genutzt wird, kann der gleiche Eintrag auch doppelt vorkommen)
 }
 
@@ -52,15 +53,16 @@ console.log(monsterArray); // Gebe das Monster-Array einmal zu beginn aus. Es so
 // INSGESAMT EINGEBAUTE FEHLER bei den Funktionen: IIIII (5 / fünf)
 
 // Generelle onload-funktion um Event-Listener zum Dokument hinzuzufügen
+
+
 window.onload = function () {
     document.getElementById("monsterSpawner").addEventListener("click", generateMonster, false);
 
     updatePlayerLevel(); // Zu Anfang wird durch eine Funktion ein HTML-Element mit Inhalt befüllt.
 }
 
- //console.log(document.getElementById("monsterSpawner").innerHTML );  
- console.log("monsterSpawner");
-
+console.log(document.getElementById("monsterSpawner").innerHTML );  
+ 
 
 // Die Hauptfunktion, um ein Monster zu erstellen. Wird von einem Button ausgerufen.
 // Generiert ein neues Monster. Dieses wird zu dem Monster-Array hinzugefügt.
