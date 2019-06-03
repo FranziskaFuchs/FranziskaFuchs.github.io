@@ -209,10 +209,15 @@ function generateMonsterModifer() : string[]
 }
 
 function generateMonsterImage() : string {
-    let image : string ="";
+    let image : string = "";
     let rngNumber : number = getRNGNumber(monsterImages.length);               // Der Rückgabewert der Funktion wird hier verwendet um den entsprechenden Teil des Namens (hier: Anfang) zu generieren.
     image = monsterImages[rngNumber];
     return image;
+}
+
+function generateMonsterMoney() : number {
+    let money : number = getRNGNumber(100);
+    return money;
 }
 // Aufgerufen, wenn man auf den Button klickt.
 // Der Spieler kämpft gegen das entsprechende Monster. Er erhält dann Erfahrungspunkte.
