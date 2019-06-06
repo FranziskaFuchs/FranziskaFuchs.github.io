@@ -1,5 +1,5 @@
 // BEISPIEL UND AUFGABE1:
-// Dieses Skript soll als Beispiel dazu dienen, wie Interfaces und Arrays genutzt werden können.
+// Dieses Skript soll als B1eispiel dazu dienen, wie Interfaces und Arrays genutzt werden können.
 // Hier wird ein ungefährer Aufbau eines simplen Klick-Spiels gezeigt. Der Nutzer kann dabei durch Button ein neues Monster erstellen.
 // Zu beginn werden hier zuerst Interfaces, danach Variablen deklariert.
 // Weiter unten kommen dann die Funktionen.
@@ -62,8 +62,16 @@ console.log(monsterArray); // Gebe das Monster-Array einmal zu beginn aus. Es so
 window.onload = function () {
     document.getElementById("monsterSpawner").addEventListener("click", generateMonster, false);
 
-    updatePlayerLevel(); // Zu Anfang wird durch eine Funktion ein HTML-Element mit Inhalt befüllt.
+    updatePlayerLevel();// Zu Anfang wird durch eine Funktion ein HTML-Element mit Inhalt befüllt.
+
 }
+
+window.onload = function (){
+    document.getElementById("monsterName").addEventListener("click",generateMonster, false);
+
+    updateName1();
+
+    }
 
 //console.log(document.getElementById("monsterSpawner").innerHTML );  
  
