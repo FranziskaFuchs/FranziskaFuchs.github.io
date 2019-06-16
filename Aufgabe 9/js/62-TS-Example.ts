@@ -47,7 +47,7 @@ let suffix : string[] = [" des Verderbens", " aus der Hölle", " der Lethalität
 
 let monsterModifers : string[] = ["Ist nervig", "Linkshänder", "Bier-Connoisseur", "Verfehlt häufig", "Prokrastiniert", "Müde", "Verwirrt", "Wasserscheu", "Bipolar", "Hat Schnupfen", "Verläuft sich oft"]; // Eine Reihe von zufälligen "Verstärkern" für das Monster.
 
-let monsterImages : string []= ["monster1.png", "monster2.png" , "monster3.png","monster4.png", "monster5.png","monster6.png","monster7.png","monster8.png","monster9.png","monster10.png"]
+let monsterImages : string []= ["monster1.png", "monster2.png" , "monster3.png","monster4.png", "monster5.png","monster6.png","monster7.png","monster8.png","monster9.png","monster10.png"];
 // -- Initialisierung für viele/variable Anzahl an Monster --
 let PushArray: number[] = [];
 
