@@ -107,12 +107,12 @@ function generateMonster()
 }
 updateHTML (); //hier die neue Funktion
 
-function updateHTML ()
+function updateHTML ()     //Funktion löscht andere
 {
-    clearMonsterCell();
-    monsterGenerateHTMLAll ();
+    clearMonsterCell(); //Funktion löscht später alles
+    monsterGenerateHTMLAll (); // Funktion stellt es wieder her, ohne bekämpftes Monster
 
-    console.log( "Anzahl der Monster" + getMonsterCount());
+    console.log("Anzahl der Monster" + getMonsterCount());
 }
 
 function clearMonsterCell ()
@@ -122,7 +122,7 @@ function clearMonsterCell ()
     while (monsterHoldingDiv.firstChild){
         monsterHoldingDiv.removeChild(monsterHoldingDiv.firstChild);
     }
-    console.log("Alles gelöscht!");
+    console.log("Alles gelöscht");
     }
 function monsterGenerateHTMLAll(){
     for (let i: number = 1; i <= monsterArray.length; i++){
@@ -151,9 +151,6 @@ function monsterGenerateHTML(count: number)
     monsterMod.innerHTML = monsterArray[count - 1].monsterModifier[0] + ", " +  monsterArray[monsterArray.length -1].monsterModifier[1]; // Inhalt des <p>: Monster-Modifizierer null und eins
     holdingDiv.appendChild(monsterMod);
     
-    let monsterHP: HTMLElement = document.createElement("p");        // Generiere einen <p>
-    monsterHP.innerHTML = "Lebenspunkte: " + monsterArray[count - 1].monsterHealthPoints; // Inhalt des <p>: Monster-Modifizierer null und eins
-    holdingDiv.appendChild(monsterHP);// Füge das <p> zum HTML-Dokument hinzu, indem es dem holding-Div angefügt wird.
 
     let monsterImg : HTMLElement = document.createElement("img");       // Erstelle ein <img>-Element
     monsterImg.setAttribute("src", "imgs/"+ monsterArray[count - 1].monsterImage);                 // Der Pfad für das Bild muss über setAttribute festgelegt werden. Der Bildpfad kann natürlich auch anders aussehen.
@@ -174,7 +171,11 @@ function monsterGenerateHTML(count: number)
     monsterBtn.addEventListener(                                        // Füge dem Monster eine Funktion hinzu.
         'click', function() {                                           // Wird bei Maus-Click ausgelöst.
             fightMonster(monsterCount);                                 // Wenn das Monster erstellt wird erhält die Funktion einen Parameter, welcher der aktuellen Anzahl entspricht.
-       },  false);                                                      // Ignoriert das false.
+       },  false); // Ignoriert das false.
+       
+       let monsterHP: HTMLElement = document.createElement("p");        // Generiere einen <p>
+    monsterHP.innerHTML = "Lebenspunkte: " + monsterArray[count - 1].monsterHealthPoints; // Inhalt des <p>: Monster-Modifizierer null und eins
+    holdingDiv.appendChild(monsterHP);
 }
 
 
