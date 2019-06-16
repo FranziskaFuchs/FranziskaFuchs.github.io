@@ -16,7 +16,7 @@ let prefix = ["Wald-", "Seuchen-", "Uralte(s) ", "Gift-", "Brennende(s) ", "Knie
 let monsterName = ["Ratte", "Nagetier", "Ungeziefer", "Libelle", "Hündchen", "Feuerelfe", "Salamander", "Heuschrecke"]; // length = 3, da 3 Einträge. Von 0-2.
 let suffix = [" des Verderbens", " aus der Hölle", " der Lethalität", " mit Rheuma", " der Redundanz", " der Zerberstung", "mit Zuckerwatte", "mit Blaubeeren", "mit Softeis", "mit Schimmel", "mit Trauben"]; // length = 6, da hier 6 Einträge sind. Von 0-5.
 let monsterModifers = ["Ist nervig", "Linkshänder", "Bier-Connoisseur", "Verfehlt häufig", "Prokrastiniert", "Müde", "Verwirrt", "Wasserscheu", "Bipolar", "Hat Schnupfen", "Verläuft sich oft"]; // Eine Reihe von zufälligen "Verstärkern" für das Monster.
-let monsterImages = ["monster1.png", "monster2.png", "monster3.png", "monster4.png", "monster5.png"];
+let monsterImages = ["imgs/monster1.png", "monster2.png", "monster3.png", "monster4.png", "monster5.png"];
 // -- Initialisierung für viele/variable Anzahl an Monster --
 let monsterArray = []; // Das Haupt-Array wurde erstellt und initialisiert!
 console.log(monsterArray); // Gebe das Monster-Array einmal zu beginn aus. Es sollte leer sein.
