@@ -298,8 +298,4 @@ function monsterGenerateHTMLAll () : number
 }
 
 
-function learMonsterCell(){
 
-    for(let learMonsterCell: number >-1);
-    while (learMonsterCell: number =-1; monsterHOldingCell = "");
-}

@@ -197,12 +197,4 @@ function monsterGenerateHTMLAll() {
     while (monsterArray = generateMonster)
         return monsterArray;
 }
-function learMonsterCell() {
-    for (let learMonsterCell;  > -1;)
-        ;
-    while (learMonsterCell)
-        : number = -1;
-    monsterHOldingCell = "";
-    ;
-}
 //# sourceMappingURL=62-TS-Example.js.map
