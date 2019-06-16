@@ -23,7 +23,7 @@ main {
 	text-align: center;
 }
 
-img {
+.monster img {
     height: 100 px;
 	width: 100%;
 }
