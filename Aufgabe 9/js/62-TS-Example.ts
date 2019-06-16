@@ -151,9 +151,9 @@ function monsterGenerateHTML(count: number)
     monsterMod.innerHTML = monsterArray[count - 1].monsterModifier[0] + ", " +  monsterArray[monsterArray.length -1].monsterModifier[1]; // Inhalt des <p>: Monster-Modifizierer null und eins
     holdingDiv.appendChild(monsterMod);
     
-    let monsterMoney : HTMLElement = document.createElement("p");        // Generiere einen <p>
-    monsterMon.innerHTML = monsterArray[count - 1].monsterName[0] + ", " +  monsterArray[monsterArray.length -1].monsterMoney[1]; // Inhalt des <p>: Monster-Modifizierer null und eins
-    holdingDiv.appendChild(monsterMod);// Füge das <p> zum HTML-Dokument hinzu, indem es dem holding-Div angefügt wird.
+    let monsterHP: HTMLElement = document.createElement("p");        // Generiere einen <p>
+    monsterHP.innerHTML = "Lebenspunkte: " + monsterArray[count - 1].monsterHealthPoints; // Inhalt des <p>: Monster-Modifizierer null und eins
+    holdingDiv.appendChild(monsterHP);// Füge das <p> zum HTML-Dokument hinzu, indem es dem holding-Div angefügt wird.
 
     let monsterImg : HTMLElement = document.createElement("img");       // Erstelle ein <img>-Element
     monsterImg.setAttribute("src", "imgs/"+ monsterArray[count - 1].monsterImage);                 // Der Pfad für das Bild muss über setAttribute festgelegt werden. Der Bildpfad kann natürlich auch anders aussehen.
