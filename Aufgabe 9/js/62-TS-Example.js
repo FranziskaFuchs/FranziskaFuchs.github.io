@@ -50,7 +50,7 @@ function generateMonster() {
             monsterMoney: newMonsterMoney,
         };
         monsterArray.push(newMonster);
-        console.log("Ein neues Monster erscheint mit", monsterArray[monsterArray.length - 1].monsterExperience + "XP gespawnt"); // Monster wird erst in diesem Schritt zu dem Array hinzugefügt 
+        console.log("Ein neues Monster erscheint mit" + monsterArray[monsterArray.length - 1].monsterExperience + "XP gespawnt"); // Monster wird erst in diesem Schritt zu dem Array hinzugefügt 
         // Man kann nur auf Array-Teile zugreifen, welche definiert sind. -1 ist nicht definitiert (und wird es auch nie sein).
         // Triggere die Generierung von HTML
     }
