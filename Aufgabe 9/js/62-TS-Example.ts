@@ -1,5 +1,5 @@
 // BEISPIEL UND AUFGABE1:
-// Dieses Skript soll als B1eispiel dazu dienen, wie Interfaces und Arrays genutzt werden können.
+// Dieses Skript soll als Beispiel dazu dienen, wie Interfaces und Arrays genutzt werden können.
 // Hier wird ein ungefährer Aufbau eines simplen Klick-Spiels gezeigt. Der Nutzer kann dabei durch Button ein neues Monster erstellen.
 // Zu beginn werden hier zuerst Interfaces, danach Variablen deklariert.
 // Weiter unten kommen dann die Funktionen.
@@ -62,34 +62,8 @@ console.log(monsterArray); // Gebe das Monster-Array einmal zu beginn aus. Es so
 window.onload = function () {
     document.getElementById("monsterSpawner").addEventListener("click", generateMonster, false);
 
-    updatePlayerLevel();// Zu Anfang wird durch eine Funktion ein HTML-Element mit Inhalt befüllt.
-
+    updatePlayerLevel(); // Zu Anfang wird durch eine Funktion ein HTML-Element mit Inhalt befüllt.
 }
-
-window.onload = function (){
-    document.getElementById("monsterName").addEventListener("click",generateMonster);
-
-    }
-window.onload = function (){ 
-    document.getElementById("monsterHealthPoints").addEventListener("click",generateMonster)
-}
-
-window.onload = function (){ 
-    document.getElementById("monsterExperience").addEventListener("click",generateMonster)
-}
-
-window.onload = function (){ 
-    document.getElementById("monsterModifier").addEventListener("click",generateMonster)
-}
-
-window.onload = function (){ 
-    document.getElementById("monsterImage").addEventListener("click",generateMonster)
-}
-
-window.onload = function (){ 
-    document.getElementById("monsterMoney").addEventListener("click",generateMonster)
-}
-
 
 //console.log(document.getElementById("monsterSpawner").innerHTML );  
  
@@ -99,6 +73,10 @@ window.onload = function (){
 // Ruft eine Funktion auf, welche dann das entsprechende HTML erzeugt.
 function generateMonster()
 {
+    let tempRandom: number = getRNGNumber(3) + 1;
+
+    for (let i: number = 0; i < tempRandom; i++) { 
+        
     let newMonsterName : string = generateMonsterName();                // Eigens-gebaute Funktion, welche einen string zurück gibt.
     let newMonsterHP : number = generateMonsterHitPoints();             // Eigens-gebaute Funktion, welche eine Zahl zurück gibt.
     let newMonsterXP : number = generateMonsterXP();                     // Eigens-gebaute Funktion, welche eine Zahl zurück gibt.
@@ -119,10 +97,10 @@ function generateMonster()
     };
 
     monsterArray.push(newMonster);                                      // Monster wird erst in diesem Schritt zu dem Array hinzugefügt 
+     monsterGenerateHTML(); 
+                                     //console.log(monsterArray[-1].monsterExperience);                    // Man kann nur auf Array-Teile zugreifen, welche definiert sind. -1 ist nicht definitiert (und wird es auch nie sein).
 
-    //console.log(monsterArray[-1].monsterExperience);                    // Man kann nur auf Array-Teile zugreifen, welche definiert sind. -1 ist nicht definitiert (und wird es auch nie sein).
-
-    monsterGenerateHTML();                                              // Triggere die Generierung von HTML
+                                                // Triggere die Generierung von HTML
 }
 
 // Generiert HTML-Elemente, welche dann einem Element untergeordnet werden. Erzeugt ebenfalls einen Event-Listener auf dem Button.
@@ -287,15 +265,3 @@ function pushStuff ()
     Push.push("Herbst");
     console.log(Push);
 }
-
-function monsterGenerateHTMLAll () : number
-{
-    let monsterArray: number = getRNGNumber(3);
-    let generateMonster: number = 3;
-
-    while (monsterArray = generateMonster)
-    return monsterArray; 
-}
-
-
-

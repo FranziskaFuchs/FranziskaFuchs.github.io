@@ -1,4 +1,4 @@
-/* css für Codebeispiel 30 11/
+/* css für Codebeispiel 30 1*/
 /* Einbettung font */ 
 @import url('https://fonts.googleapis.com/css?family=Courgette');
 
@@ -19,14 +19,9 @@ h1 {
 }
 
 main {
-	
 	text-align: center;
 }
 
-.monster img {
-    height: 100 px;
-	width: 100%;
-}
 
 button {
 
