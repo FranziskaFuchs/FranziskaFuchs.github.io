@@ -276,7 +276,7 @@ function fightMonster(_index : number)
 //function runAway(){
    // monsterArray = [];
    // document.getElementById(monsterHolder).innerHTML = "";
-}
+//}
 // Aufgerufen, um das HTML-Element, welches das Spieler-Level darstellt, zu erneuern.
 function updatePlayerLevel()
 {
