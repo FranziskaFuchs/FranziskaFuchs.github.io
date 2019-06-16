@@ -18,6 +18,7 @@ let suffix = [" des Verderbens", " aus der Hölle", " der Lethalität", " mit Rh
 let monsterModifers = ["Ist nervig", "Linkshänder", "Bier-Connoisseur", "Verfehlt häufig", "Prokrastiniert", "Müde", "Verwirrt", "Wasserscheu", "Bipolar", "Hat Schnupfen", "Verläuft sich oft"]; // Eine Reihe von zufälligen "Verstärkern" für das Monster.
 let monsterImages = ["monster1.png", "monster2.png", "monster3.png", "monster4.png", "monster5.png"];
 // -- Initialisierung für viele/variable Anzahl an Monster --
+let PushArray = [];
 let monsterArray = []; // Das Haupt-Array wurde erstellt und initialisiert!
 console.log(monsterArray); // Gebe das Monster-Array einmal zu beginn aus. Es sollte leer sein.
 // ----------- Funktionen ----------- //
@@ -87,6 +88,9 @@ function generateMonster() {
         holdingDiv.appendChild(monsterName); // Füge das <p> zum HTML-Dokument hinzu, indem es dem holding-Div angefügt wird.
         let monsterMod = document.createElement("p"); // Generiere einen <p>
         monsterMod.innerHTML = monsterArray[count - 1].monsterModifier[0] + ", " + monsterArray[monsterArray.length - 1].monsterModifier[1]; // Inhalt des <p>: Monster-Modifizierer null und eins
+        holdingDiv.appendChild(monsterMod);
+        let monsterMoney = document.createElement("p"); // Generiere einen <p>
+        monsterMon.innerHTML = monsterArray[count - 1].monsterName[0] + ", " + monsterArray[monsterArray.length - 1].monsterMoney[1]; // Inhalt des <p>: Monster-Modifizierer null und eins
         holdingDiv.appendChild(monsterMod); // Füge das <p> zum HTML-Dokument hinzu, indem es dem holding-Div angefügt wird.
         let monsterImg = document.createElement("img"); // Erstelle ein <img>-Element
         monsterImg.setAttribute("src", "imgs/" + monsterArray[count - 1].monsterImage); // Der Pfad für das Bild muss über setAttribute festgelegt werden. Der Bildpfad kann natürlich auch anders aussehen.

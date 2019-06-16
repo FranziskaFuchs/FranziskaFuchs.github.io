@@ -49,6 +49,8 @@ let monsterModifers : string[] = ["Ist nervig", "Linkshänder", "Bier-Connoisseu
 
 let monsterImages : string []= ["monster1.png", "monster2.png" , "monster3.png","monster4.png", "monster5.png"]
 // -- Initialisierung für viele/variable Anzahl an Monster --
+let PushArray: number[] = [];
+
 let monsterArray : Monster[] = []; // Das Haupt-Array wurde erstellt und initialisiert!
 console.log(monsterArray); // Gebe das Monster-Array einmal zu beginn aus. Es sollte leer sein.
 
@@ -147,7 +149,11 @@ function monsterGenerateHTML(count: number)
 
     let monsterMod : HTMLElement = document.createElement("p");        // Generiere einen <p>
     monsterMod.innerHTML = monsterArray[count - 1].monsterModifier[0] + ", " +  monsterArray[monsterArray.length -1].monsterModifier[1]; // Inhalt des <p>: Monster-Modifizierer null und eins
-    holdingDiv.appendChild(monsterMod);                                // Füge das <p> zum HTML-Dokument hinzu, indem es dem holding-Div angefügt wird.
+    holdingDiv.appendChild(monsterMod);
+    
+    let monsterMoney : HTMLElement = document.createElement("p");        // Generiere einen <p>
+    monsterMon.innerHTML = monsterArray[count - 1].monsterName[0] + ", " +  monsterArray[monsterArray.length -1].monsterMoney[1]; // Inhalt des <p>: Monster-Modifizierer null und eins
+    holdingDiv.appendChild(monsterMod);// Füge das <p> zum HTML-Dokument hinzu, indem es dem holding-Div angefügt wird.
 
     let monsterImg : HTMLElement = document.createElement("img");       // Erstelle ein <img>-Element
     monsterImg.setAttribute("src", "imgs/"+ monsterArray[count - 1].monsterImage);                 // Der Pfad für das Bild muss über setAttribute festgelegt werden. Der Bildpfad kann natürlich auch anders aussehen.
