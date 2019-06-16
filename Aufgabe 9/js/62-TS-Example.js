@@ -174,14 +174,9 @@ function generateMonster() {
         console.log("Spieler kämpft gegen Monster und gewinnt!"); // Ohne Logik mit if/else ist so etwas wie ein Kampf nicht leicht umzusetzen.
         console.log("Das Monster weigert sich zu verschwinden."); // Wird nächste Stunde erweitert.
         playerXP += monsterArray[_index].monsterExperience;
-        monsterArray.splice(_index, 1);
+        monsterArray.splice(_index, 1); // _index ist in diesem Fall die Länge des Arrays - allerdings zählt der Computer beginnend von null, nicht eins! Deshalb _index-1.
         updatePlayerLevel();
-        updateHTML(); // _index ist in diesem Fall die Länge des Arrays - allerdings zählt der Computer beginnend von null, nicht eins! Deshalb _index-1.
-        runAway();
-    }
-    function runAway() {
-        monsterArray = [];
-        document.getElementById(monsterHolder).innerHTML = "";
+        updateHTML();
     }
     // Aufgerufen, um das HTML-Element, welches das Spieler-Level darstellt, zu erneuern.
     function updatePlayerLevel() {
