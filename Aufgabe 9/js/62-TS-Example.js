@@ -177,29 +177,33 @@ function generateMonster() {
         monsterArray.splice(_index, 1); // _index ist in diesem Fall die Länge des Arrays - allerdings zählt der Computer beginnend von null, nicht eins! Deshalb _index-1.
         updatePlayerLevel();
         updateHTML();
+        //runAway();
     }
-    // Aufgerufen, um das HTML-Element, welches das Spieler-Level darstellt, zu erneuern.
-    function updatePlayerLevel() {
-        let tempLevel = Math.floor(playerXP / playerXPperLevel + 1); // Spieler-Level = XP / XPproLevel
-        document.getElementById("xpCounter").innerHTML = "Player-Level: " + tempLevel + " (XP: " + playerXP + " / " + playerXPperLevel + ")"; // Baue den String für die Spieler-Info zusammen
-        console.log("Spieler " + playerName + " hat nun Level " + tempLevel + " mit " + playerXP + " (" + playerXPperLevel + " pro Level)"); // Spieler-Level in der Konsole.
-    }
-    function getMonsterCount() {
-        return monsterArray.length;
-    }
-    function pushStuff() {
-        let Push = [];
-        console.log(Push);
-        Push.push("hallo");
-        console.log(Push);
-        Push.push("Morgen");
-        console.log(Push);
-        Push.push("sommer");
-        console.log(Push);
-        Push.push("Frühling");
-        console.log(Push);
-        Push.push("Herbst");
-        console.log(Push);
-    }
+    //function runAway(){
+    // monsterArray = [];
+    // document.getElementById(monsterHolder).innerHTML = "";
+}
+// Aufgerufen, um das HTML-Element, welches das Spieler-Level darstellt, zu erneuern.
+function updatePlayerLevel() {
+    let tempLevel = Math.floor(playerXP / playerXPperLevel + 1); // Spieler-Level = XP / XPproLevel
+    document.getElementById("xpCounter").innerHTML = "Player-Level: " + tempLevel + " (XP: " + playerXP + " / " + playerXPperLevel + ")"; // Baue den String für die Spieler-Info zusammen
+    console.log("Spieler " + playerName + " hat nun Level " + tempLevel + " mit " + playerXP + " (" + playerXPperLevel + " pro Level)"); // Spieler-Level in der Konsole.
+}
+function getMonsterCount() {
+    return monsterArray.length;
+}
+function pushStuff() {
+    let Push = [];
+    console.log(Push);
+    Push.push("hallo");
+    console.log(Push);
+    Push.push("Morgen");
+    console.log(Push);
+    Push.push("sommer");
+    console.log(Push);
+    Push.push("Frühling");
+    console.log(Push);
+    Push.push("Herbst");
+    console.log(Push);
 }
 //# sourceMappingURL=62-TS-Example.js.map
