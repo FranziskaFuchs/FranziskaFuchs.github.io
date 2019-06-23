@@ -8,7 +8,7 @@
 let monsterHolder = "monsterHoldingCell"; // ID für das Haupt-Element, in welchem die Monster sich befinden werden. Wird vielleicht mehrfach in dem Skript gebraucht, deshalb einmalig definitiert.
 let playerName = "Spielername"; // Ein paar globale Variablen, welche den Spieler darstellen.
 let playerXP = 0; // Stellt die gesammelte Erfahrung des Spielers dar.
-let playerXPperLevel = 500;
+let playerXPperLevel = 800;
 let money = 0;
 let playerLevel = 1;
 // Da es nur einen Spieler gibt, ergibt sich noch nicht viel Sinn darin, für den Spieler ein interface (im Sinne der Programmierung) zu erstellen.
@@ -38,7 +38,7 @@ window.onload = function () {
 // Generiert ein neues Monster. Dieses wird zu dem Monster-Array hinzugefügt.
 // Ruft eine Funktion auf, welche dann das entsprechende HTML erzeugt.
 function generateMonster() {
-    let monsterNr = getRNGNumber(3) + 1;
+    let monsterNr = getRNGNumber(2) + 1;
     for (let i = 0; i < monsterNr; i++) {
         let newMonsterName = generateMonsterName(); // Eigens-gebaute Funktion, welche einen string zurück gibt.
         let newMonsterHP = generateMonsterHitPoints(); // Eigens-gebaute Funktion, welche eine Zahl zurück gibt.
@@ -71,7 +71,7 @@ function clearMonsterCell() {
     console.log(monsterArray);
     for (let i = 0; i <= monsterArray.length; i++) {
         if (document.getElementById("MOnster" + (i + 1)) != null) {
-            var element = documet.getElementById("Monster" + (i + 1));
+            var element = document.getElementById("Monster" + (i + 1));
             element.parentNode.removeChild(element);
         }
     }
@@ -89,7 +89,7 @@ function getMonsterCount() {
     return monsterCount;
 }
 // Generiert HTML-Elemente, welche dann einem Element untergeordnet werden. Erzeugt ebenfalls einen Event-Listener auf dem Button.
-function monsterGenerateHTML(count) {
+function monsterGenerateHTML(monsterArrayPosition) {
     let holdingDiv = document.createElement("div"); // Erstelle ein neues HTML-Element vom typ <div>. Es ist jedoch noch nicht zu sehen!
     holdingDiv.setAttribute("id", "monster" + (monsterArrayPosition + 1)); // Die ID jedes neu-erstellten Monsters entspricht der aktuellen Array-Länge.
     holdingDiv.setAttribute("class", "monster"); // Klasse für Visuals.
