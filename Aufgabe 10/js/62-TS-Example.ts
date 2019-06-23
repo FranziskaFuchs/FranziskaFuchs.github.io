@@ -388,18 +388,18 @@ function getMonsterCount (): number {
     return monsterArray.length;
 }
 
-function pushStuff ()
-{ 
-    let Push: string[] = [];
-    console.log(Push);
-    Push.push("hallo");
-    console.log(Push);
-    Push.push("Morgen");
-    console.log(Push);
-    Push.push("sommer");
-    console.log(Push);
-    Push.push("Frühling");
-    console.log(Push);
-    Push.push("Herbst");
-    console.log(Push);
-}
+//function pushStuff ()
+//{ 
+    //let Push: string[] = [];
+    //console.log(Push);
+    //Push.push("hallo");
+    //console.log(Push);
+   // Push.push("Morgen");
+    //console.log(Push);
+    //Push.push("sommer");
+    //console.log(Push);
+    //Push.push("Frühling");
+    //console.log(Push);
+    //Push.push("Herbst");
+    //console.log(Push);
+//}
