@@ -116,7 +116,7 @@ function updateHTML ()
 {
     clearMonsterCell(); 
     monsterGenerateHTMLAll();
-    getMonsterCount ();
+    getMonsterCount();
 }
 
 function clearMonsterCell ()
@@ -135,10 +135,9 @@ console.log(monsterArray);
 function monsterGenerateHTMLAll(){
 
     for (let i: number = 0; i <= monsterArray.length; i++){
-        monsterGenerateHTML (i);
-        console.log("fertig"+ i);
-    }
-    console.log("already done");
+        monsterGenerateHTML (i);   
+ }
+
 }
 
 function getMonsterCount (): number{
@@ -384,9 +383,7 @@ function updatePlayerLevel(XPchange: number)
     }
 }
 
-function getMonsterCount (): number {
-    return monsterArray.length;
-}
+
 
 //function pushStuff ()
 //{ 
