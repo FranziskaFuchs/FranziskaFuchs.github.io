@@ -313,9 +313,9 @@ function fightAllWeakMonsters (){
     let thatLevel : number = playerLevel; 
     for (let i = 0; i< monsterArray.length; i++){
         let secondPlayerXP : number = 0;
-        fightMonster(i);
-        if (thatLevel > monsterArray[i].monsterLevel){
-           i = i-1;
+      
+        if (thatLevel < monsterArray[i].monsterLevel){
+          fightMonster(i);  
         }
         if (i >= monsterArray.length){
             break;
