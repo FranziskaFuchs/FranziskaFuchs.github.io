@@ -314,7 +314,7 @@ function fightAllWeakMonsters (){
     for (let i = 0; i< monsterArray.length; i++){
         let secondPlayerXP : number = 0;
         if (thatLevel > monsterArray[i].monsterLevel){
-            fightMonster (i);
+            fightMonster (i = i-1);
         }
         if (i >= monsterArray.length){
             break;
@@ -368,7 +368,7 @@ function updatePlayerLevel(XPchange: number)
     document.getElementById("xpCounter").innerHTML = "Player-Level: " + playerLevel + " (XP: " + playerXP + " / " + extendedXP + ")";       // Baue den String für die Spieler-Info zusammen
     console.log("Spieler " + playerName + " hat nun Level " + playerLevel + " mit " + playerXP + " (" + playerXPperLevel + " pro Level)");        // Spieler-Level in der Konsole.
 
-    if (playerLevel == 20 && playerLevel > firstplayerLevel){
+    if (playerLevel >= 20 && playerLevel > firstplayerLevel){
         alert("Du hast Level 20 erreicht!Du hast gewonnen!")
     }
 }
