@@ -115,7 +115,7 @@ function generateMonster()
 function updateHTML ()     
 {
     clearMonsterCell(); 
-    monsterGenerateHTMLAll();
+    monsterGenerateHTMLAll(); 
     getMonsterCount();
 }
 
