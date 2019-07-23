@@ -7,34 +7,89 @@ div{
     margin-bottom:20%;
     margin-top:5%;
 }
-#Karte{
-    background-color: red;
-    font-size: 8px;
-    height:40px;
-    width:20px;
+.Karte{ 
+    height:150px;
+    width:75px;
+   
 }
+
+#Spielerdeck .Karte, #Gegnerdeck .Karte {
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top:0.5em;
+    }
+
+#Ablagestapel .Karte{
+    margin-top: -2em;
+}
+
+.Karte .Verdeckt {
+    background-color: pink;
+}
+
+#Kartenstapel .Karte {
+    margin-top: 0em;
+}
+
+.Kartenzahl {
+    color: white;
+    margin-left:30%;
+    padding: 10%;
+    padding-top: 1.8em;
+    font-size: 2em;
+}
+
+.Blau {
+    background-color:blue;
+}
+
+.Rot{
+    background-color: red;
+}
+
+.Grün{
+    background-color: green;
+}
+
+.Gelb{
+    background-color:yellow;
+}
+
 #Gegnerdeck{ 
-    background-color:rgb(154, 231, 154);
-    height:20%;
+    background-color:rgb(179, 137, 22);
+    height:200px;
     width:100%;
+    clear:both;
+    margin-bottom: -1%;
 }
 
 #Kartenstapel{
-    background-color:rgb(175, 230, 175);
-    height:50%;
-    width:100%;
+    background-color:rgb(3, 151, 3);
+    height:150px;
+    width:75px;
+    float:left;
+    margin-bottom: 6%;
+    margin-left: 20%;
+    
 }
 
 #Ablagestapel{
-    background-color:rgb(175, 230, 175);
-    height:50%;
-    width:100%;
+    background-color:rgb(85, 16, 56);
+    height:150px;
+    width:75px;
+    float:left;
+    margin-bottom: 6%;
+    margin-left: 20%;
+    
 }
 
 #Spielerdeck{
     background-color:rgb(175, 230, 175);
-    height:50%;
+    height:200px;
     width:100%;
+    clear:both;
+    margin-bottom: -75%;
 }
 
 
