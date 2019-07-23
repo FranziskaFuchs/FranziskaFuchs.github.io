@@ -26,7 +26,7 @@ div{
 }
 
 .Karte .Verdeckt {
-    background-color: pink;
+    background-color: rgb(194, 13, 43);
 }
 
 #Kartenstapel .Karte {
@@ -76,9 +76,9 @@ div{
 }
 
 #Ablagestapel{
-    background-color:rgb(85, 16, 56);
-    height:150px;
-    width:75px;
+    background-color:rgba(99, 18, 42, 0.856);
+    height:300px;
+    width:125px;
     float:left;
     margin-bottom: 6%;
     margin-left: 20%;
@@ -86,7 +86,7 @@ div{
 }
 
 #Spielerdeck{
-    background-color:rgb(175, 230, 175);
+    background-color:rgb(230, 107, 124);
     height:200px;
     width:100%;
     clear:both;
