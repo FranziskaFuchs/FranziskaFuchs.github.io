@@ -40,6 +40,11 @@ function KarteHTML(karte, Zielort, index) {
         holdingDiv.addEventListener("click", function () { KarteLegen(karte, index); }, false);
     }
 }
+function KarteVerdeckt(karte, Zielort, index) {
+    let holdingDiv = document.createElement("div");
+    holdingDiv.setAttribute("class", "Karte" + " " + "Verdeckt");
+    document.getElementById(Zielort).appendChild(holdingDiv);
+}
 function KarteLegen(karte, index) {
     if (karte.KartenFarbe == Ablagestapel[Ablagestapel.length - 1].KartenFarbe || karte.KartenWert == Ablagestapel[Ablagestapel.length - 1].KartenWert) {
         Ablagestapel.push(karte);
