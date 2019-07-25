@@ -56,12 +56,6 @@ function KarteHTML (karte:Karte, Zielort: string, index : number){
      }
 }
 
-function KarteHTML (karte: Karte, Zielort: string,index:number){
-    let holdingDiv: HTMLElement = document.createElement("div");
-    holdingDiv.setAttribute("class", "Karte" + " " + "Verdeckt");
-    document.getElementById(Zielort).appendChild(holdingDiv);
-
-}
 function KarteLegen(karte :Karte, index: number){
     if(karte.KartenFarbe == Ablagestapel[Ablagestapel.length-1].KartenFarbe || karte.KartenWert ==Ablagestapel[Ablagestapel.length-1].KartenWert){
         Ablagestapel.push(karte);
