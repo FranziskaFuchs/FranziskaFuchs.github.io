@@ -9,7 +9,7 @@ window.onload = function () {
 function GamePlay() {
     KartenGenerierung();
     Kartenstapel = shuffle(Kartenstapel); //Karten werden gemischt
-    //Spielerkarten werden verteilt
+    //Spielerkarten werden verteilt:
     for (let i = 0; i < 5; i++) {
         Spielerdeck.push(Kartenstapel[i]);
         Gegnerdeck.push(Kartenstapel[i + 5]);
@@ -40,7 +40,7 @@ function KarteHTML(karte, Zielort, index) {
         holdingDiv.addEventListener("click", function () { KarteLegen(karte, index); }, false);
     }
 }
-function KarteVerdeckt(karte, Zielort, index) {
+function KarteHTML(karte, Zielort, index) {
     let holdingDiv = document.createElement("div");
     holdingDiv.setAttribute("class", "Karte" + " " + "Verdeckt");
     document.getElementById(Zielort).appendChild(holdingDiv);

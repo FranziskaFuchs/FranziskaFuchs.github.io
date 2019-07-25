@@ -16,7 +16,8 @@ window.onload = function (){
 function GamePlay (){
     KartenGenerierung();
     Kartenstapel = shuffle(Kartenstapel); //Karten werden gemischt
-     //Spielerkarten werden verteilt
+
+    //Spielerkarten werden verteilt:
     for (let i = 0; i < 5; i++){
         Spielerdeck.push(Kartenstapel[i]);
         Gegnerdeck.push(Kartenstapel[i+5]);
@@ -55,7 +56,7 @@ function KarteHTML (karte:Karte, Zielort: string, index : number){
      }
 }
 
-function KarteVerdeckt (karte: Karte, Zielort: string,index:number){
+function KarteHTML (karte: Karte, Zielort: string,index:number){
     let holdingDiv: HTMLElement = document.createElement("div");
     holdingDiv.setAttribute("class", "Karte" + " " + "Verdeckt");
     document.getElementById(Zielort).appendChild(holdingDiv);
