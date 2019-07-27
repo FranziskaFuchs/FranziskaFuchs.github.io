@@ -3,10 +3,10 @@ interface Karte {
     KartenWert: number;
 }
 
-let Kartenstapel: Karte[];
-let Ablagestapel: Karte[];
-let Gegnerdeck: Karte [];
-let Spielerdeck: Karte [];
+let Kartenstapel: Karte[] = [];
+let Ablagestapel: Karte[] = [];
+let Gegnerdeck: Karte [] = [];
+let Spielerdeck: Karte [] = [];
 
 window.onload = function (){
     document.getElementById("Kartenstapel").addEventListener("click",KarteNehmen,false);
@@ -14,10 +14,6 @@ window.onload = function (){
 }
 
 function GamePlay (){
-    Kartenstapel = [];
-    Ablagestapel = [];
-    Gegnerdeck = [];
-    Spielerdeck = [];
     KartenGenerierung();
     Kartenstapel = shuffle(Kartenstapel); //Karten werden gemischt
 
@@ -34,12 +30,17 @@ function GamePlay (){
     console.log (Gegnerdeck);
     console.log (Kartenstapel);  
     
-    updateHTML("Spielerdeck");
-    updateHTML("Gegnerdeck");
-    updateHTML("Ablagestapel");
-    updateHTML("Kartenstapel");
-}
+    for(let i = 0; i < Spielerdeck.length; i++) {
+        KarteHTML(Spielerdeck[i],"Spielerdeck",i);
+    }
 
+    for(let i = 0; i < Gegnerdeck.length; i++){
+        KarteVerdeckt(Gegnerdeck [i], "Gegnerdeck",i);
+    }
+
+    KarteHTML(Ablagestapel[Ablagestapel.length - 1], "Ablagestapel",Ablagestapel.length-1);
+    KarteVerdeckt(Kartenstapel[Kartenstapel.length -1], "Kartenstapel",Kartenstapel.length-1);
+}
 function KarteHTML (karte:Karte, Zielort: string, index : number){
      let holdingDiv: HTMLElement = document.createElement ("div");
      holdingDiv.setAttribute("class", "Karte"  + " " + karte.KartenFarbe);
@@ -67,13 +68,7 @@ function KarteLegen(karte :Karte, index: number){
         Spielerdeck.splice(index, 1);
         updateHTML("Spielerdeck");
         updateHTML("Ablagestapel");
-        if(Spielerdeck.length == 0){
-            window.alert("Du hast gewonnen!");
-            GamePlay();
-        }
-        else{
-            Gegnerzug();
-        }
+        Gegnerzug();
     }
 }
 
@@ -101,11 +96,7 @@ function Gegnerzug(){
                 break;
             }
         }
-        if(Gegnerdeck.length == 0){
-            window.alert("Du hast leider verloren!");
-            GamePlay();
-        }
-        else if (i >= Gegnerdeck.length){
+        if (i >= Gegnerdeck.length){
 
             Gegnerdeck.push(Kartenstapel[Kartenstapel.length-1]);
             Kartenstapel.splice(Kartenstapel.length-1,1);
@@ -178,7 +169,7 @@ function KartenGenerierung (){
            }
 
            else if ( j == 4){
-               Farbe = "Gruen"
+               Farbe = "Grün"
            }
                 
             let NewKarte: Karte = {
